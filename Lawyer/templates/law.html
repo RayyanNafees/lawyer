@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../jquery.js"></script>
+    <script type="text/javascript">
+        //test
+    </script>
+    <title>Choose service</title>
+</head>
+
+<body>
+    <div id="body">
+        <nav>
+            <span>proyurist.ur</span>
+        </nav>
+        <h3><span>Choose services</span></h3>
+        <div id="form">
+            <form method="post" action=" " onsubmit>
+
+                <ul>
+
+
+                    <li id="Pick"><input id="check1" name="N1" value="Administrative law" type="checkbox" class="check">
+                        <label for="check1" class="fa fa-square-o"><span>Administrative law</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check2" name="N2" value=" Arbitration procedural law" type="checkbox" class="check">
+                        <label for="check2" class="fa fa-square-o"><span> Arbitration procedural law</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check3" name="N3" value="Intellectual property rights " type="checkbox" class="check">
+                        <label for="check3" class="fa fa-square-o"><span>Intellectual property rights </span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check4" name="N4" value=" International law" type="checkbox" class="check">
+                        <label for="check4" class="fa fa-square-o"><span> International law</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check5" name="N5" value=" Labor law " type="checkbox" class="check">
+                        <label for="check5" class="fa fa-square-o"><span> Labor law</span></label>
+                    </li>
+
+
+                    <li id="Pick"><input id="check6" name="N6" value="Housing law " type="checkbox" class="check">
+                        <label for="check6" class="fa fa-square-o"><span>Housing law </span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check7" name="N7" value=" Family law " type="checkbox" class="check">
+                        <label for="check7" class="fa fa-square-o"><span>  Family law </span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check8" name="N8" value="Consumer rights Protection" type="checkbox" class="check">
+                        <label for="check8" class="fa fa-square-o"><span> Consumer rights Protection</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check9" name="N9" value=" Inheritance law " type="checkbox" class="check">
+                        <label for="check9" class="fa fa-square-o"><span>  Inheritance law</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check10" name="N10" value="Business Law  " type="checkbox" class="check">
+                        <label for="check10" class="fa fa-square-o"><span> Business Law </span></label>
+                    </li>
+                    <li id="Pick"><input id="check11" name="N11" value="  Financial right" type="checkbox" class="check">
+                        <label for="check11" class="fa fa-square-o"><span>  Financial right</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check12" name="N12" value=" Patent Law " type="checkbox" class="check">
+                        <label for="check12" class="fa fa-square-o"><span> Patent Law </span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check13" name="N13" value="Pension law  " type="checkbox" class="check">
+                        <label for="check13" class="fa fa-square-o"><span> Pension law </span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check14" name="N14" value=" Customs law  " type="checkbox" class="check">
+                        <label for="check14" class="fa fa-square-o"><span>  Customs law </span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check15" name="N15" value=" Water law " type="checkbox" class="check">
+                        <label for="check15" class="fa fa-square-o"><span> Water law </span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check16" name="N16" value="Medical law  " type="checkbox" class="check">
+                        <label for="check16" class="fa fa-square-o"><span> Medical law </span></label>
+                    </li>
+
+
+                    <li id="Pick"><input id="check17" name="N17" value=" Tax law  " type="checkbox" class="check">
+                        <label for="check17" class="fa fa-square-o"><span>  Housing law </span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check18" name="N18" value=" Land law " type="checkbox" class="check">
+                        <label for="check18" class="fa fa-square-o"><span> Land law </span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check19" name="N19" value="Corporate right  " type="checkbox" class="check">
+                        <label for="check19" class="fa fa-square-o"><span>  Corporate right</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check20" name="N20" value=" Commercial law  " type="checkbox" class="check">
+                        <label for="check20" class="fa fa-square-o"><span>  Commercial law </span></label>
+                    </li>
+                    <!--end list-->
+
+                </ul>
+                <footer><input onclick="send()" type="submit"></footer>
+            </form>
+        </div>
+    </div>
+    <p></p>
+    <script type="text/javascript">
+        let choosed = 20;
+        $("li label").click(function() {
+            let check = $(this).attr("class")
+            if (check == "fa fa-square-o") {
+                choosed--;
+                $(this).attr("class", "fa fa-check-square").parent("li").css("background", "#E9DBEC");
+            } else {
+                if (choosed > -1) {
+                    choosed++;
+                    $(this).attr("class", "fa fa-square-o").parent("li").css("background", "white");
+                } else {
+                    alert("you can only choose twenty or less services");
+                }
+
+            }
+        });
+
+        function send() {
+            $.ajax({
+                url: window.location,
+                type: "post"
+            })
+        }
+    </script>
+</body>
+
+</html>

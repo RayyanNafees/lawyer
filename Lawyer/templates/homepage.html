@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/profile.css" />
+    <link rel="stylesheet" href="../static/libs/font-awesome.min.css">
+    <script src="../static/libs/jquery.js"></script>
+    <script type="text/javascript">
+        //$("#p1,#p2").fadeOut("slow");
+    </script>
+    <style type="text/css">
+        @media screen and (min-width:750px) {
+            ChooseOnce {
+                width: 60%;
+            }
+            nav footer {
+                display: none;
+            }
+            ChooseOnce #box {
+                width: 200px;
+            }
+        }
+        
+        #top {
+            background-image: None;
+            color: dimgrey;
+            height: auto;
+        }
+        
+        #top button,
+        #top span {
+            color: #A07FB4;
+        }
+        
+        #reviews {
+            width: 90%;
+            height: auto;
+            display: flex;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: space-between;
+        }
+        
+        #reviews #box {
+            color: dimgrey;
+            width: 120px;
+            height: 80px;
+            box-shadow: -1px -1px 8px 0px #F2EAF3;
+            padding: 10px 10px;
+        }
+        
+        #reviews #box nav {
+            font-size: 18px;
+        }
+        
+        #reviews #box i {
+            font-size: 25px;
+            margin-top: 2px;
+            color: #7566BF;
+        }
+        
+        #reviews #box #n {
+            font-size: 14px;
+            border: 1px solid #E6DAE8;
+            color: #9132CE;
+        }
+        
+        #reviews span {
+            padding: 0px 15px;
+            font-size: 10px;
+        }
+        
+        h3 i {
+            color: dimgrey;
+            font-size: 11px;
+            float: right;
+        }
+        
+        #search {
+            border: 1px solid #BE98D9;
+        }
+        
+        button:active {
+            color: #9132CE;
+            background: lightgrey;
+        }
+        
+        #TopHeading h3 i {
+            float: None;
+            color: white;
+            text-shadow: 1px 1px #A61596, -1px -1px #E9E7FC;
+        }
+        
+        #TopHeading h3 {
+            color: #C92DAC;
+            text-decoration: underline;
+        }
+        
+        #TopHeading {
+            width: 100%;
+            height: auto;
+            padding: 5px 5px;
+            box-shadow: 1px 0px 8px 0px #F2EAF3;
+        }
+        
+        #locationMap {
+            width: 80%;
+            margin: 0 auto;
+            height: 200px;
+            background-size: 100% 100%;
+            background-image: url("https://i.imgur.com/ySC5Qu2.jpg");
+            background-repeat: no-repeat;
+        }
+        /*
+dak #462C54
+ #9132CE color
+light #BE98D9
+light with. #F2EAF3
+*/
+    </style>
+    <title>My profile</title>
+</head>
+
+<body>
+    <div id="body">
+        <div id="top">
+            <nav>
+                <a href=" https://www.openstreetmap.org/"><button style="margin-left:-10%; float: right; padding: 0px 10px;">location <i class="fa fa-map-marker"></i></button></a>
+                <span style="margin-left: 30%; float: left;"><button> <a href="../take_inputs.html">login<i class="fa fa-user"></i></a></button>
+<button style="margin-left:0%;color:dimgrey;"id="open" class="fa fa-reorder"></button>
+</span>
+                <!--menu -->
+                <div id="menu_content">
+                    <span style="padding: 5px 10px;" id="close" class="fa fa-arrow-right"></span>
+                    <ul>
+                        <li><a href=" "><i class="fa fa-home" ></i>Home</a></li>
+                        <li><a href=" "><i class="fa fa-book"></i>Change Services</a></li>
+                        <li><a href=" "><i class="fa fa-universal-access"></i>Laws</a> </li>
+                        <li><a href=" "><i class="fa fa-asl-interpreting "></i>Advocates</a></li>
+                        <li><a href=" "><i class=" fa fa-flag-checkered"></i>Notaries</a></li>
+                        <hr>
+                        <li><a href=" "><i class="fa fa-envelope-square"></i> </a>Contact</a>
+                        </li>
+                        <li><a href=" "><i class=" fa fa-info-circle"> </i>About Us</a></li>
+                        <li><a href=" "><i class="fa fa-warning"></i> Terms and conditions</a></li>
+                    </ul>
+                </div>
+                <!--menu end-->
+            </nav>
+            <!--nav end-->
+            <h3 style="color:#462C54; margin-top:-3%; text-decoration:underline;">Pro Lawyer</h3>
+            <span>
+<b><center style=" font-size:small; color:black;">Site of reviews about lawyers <b style="color:#9132CE">number 1</b> in Russia</center>
+</b>
+<h6 style="margin: 0 auto; text-align: center; width: 60%;">By the number of reviews,.visitors and pages of law (RBC research 2020/2021)</h6>
+</span>
+        </div>
+        <br><br><br>
+
+        <!--search here-->
+        <div id="search"><input placeholder="Search for a law,service, lawyer, law firm"><button>Find</button></div>
+        <div id="SearchResult" style="position: absolute; background:none;">
+            <ul style="background:white; color:dimgrey;" id="append_search_result">
+                <h4>suggestion</h4>
+                <a href="">
+                    <li>Lawyers at Lagos</li>
+                </a>
+            </ul>
+        </div>
+        <!--Search end-->
+        <br>
+        <div id="reviews">
+
+            <div id="box">
+                <nav><i class="fa fa-comments-o"></i>1 822 859</nav>
+                <span>reviews</span><br>
+                <span id="n">+6 262</span>
+            </div>
+
+            <div id="box">
+                <nav><i class="fa fa-fax"></i> 4 025 029</nav>
+                <span>appointment</span><br>
+                <span id="n">+39 772</span>
+            </div>
+
+            <div id="box">
+                <nav><i class="fa fa-graduation-cap"></i>701 404</nav>
+                <span>Lawyers </span><br>
+                <span id="n">+ 647</span>
+            </div>
+
+            <div id="box">
+                <nav><i class="fa fa-bank"></i> 50 035</nav>
+                <span>Companies</span>
+                <br><span id="n">+39</span>
+            </div>
+            <div id="box">
+                <nav><i class="fa fa-group"></i> 12 636 460</nav>
+                <span>Visitors per month</span>
+            </div>
+
+        </div>
+        <br>
+        <!--end-->
+        <br>
+        <div id="TopHeading">
+            <h3>( <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> Popular In City)</h3>
+        </div>
+        <div id="topers_list">
+            <!--END-->
+            <div id="box">
+                <h5>Lawyers</h5>
+                <span>20728</span>
+                <button>View All</button>
+            </div>
+
+            <div id="box">
+                <h5>Advocates</h5>
+                <span>108279</span>
+                <button>View All</button>
+            </div>
+
+            <div id="box">
+                <h5>Notaries</h5>
+                <span>304792</span>
+                <button>View All</button>
+            </div>
+
+
+        </div>
+
+        <br>
+
+        <!--end row-->
+
+        <h3 style="text-decoration:underline; text-align:left;padding: 0px 10px;">Top #1</h3><br>
+        <div id="ChoosedOnce">
+
+            <div id="box">
+                <h3>Lawyers <i>4 926</i></h3>
+                <div id="list">
+                    <li><span>Civil Cases <i>1 630</i></span></li>
+
+                    <li><span>Administrative deputes <i>3 130</i></span></li>
+
+                    <li><span>intellectual property <i>5 023</i></span></li>
+
+                </div>
+                <button>see more</button>
+            </div>
+
+
+            <div id="box">
+                <h3>Advocates <i>5 207</i></h3>
+                <div id="list">
+
+                    <li><span>Criminal proceeding <i> 1 290</i></span></li>
+
+                    <li><span>Arbitration deputes <i> 330</i></span></li>
+
+                    <li><span> International law<i>141</i></span></li>
+
+                </div>
+                <button>see more</button>
+            </div>
+
+
+            <div id="box">
+                <h3>Services <i>166309</i></h3>
+                <div id="list">
+
+                    <li><span>Consulting<i> 1533</i></span></li>
+
+                    <li><span>Drafting of legal documents <i>303</i></span></li>
+
+                    <li><span>representation in courts<i>280</i></span></li>
+
+                </div>
+                <button>see more</button>
+            </div>
+
+
+            <div id="box">
+                <h3>Lawyers Company <i>105 953</i></h3>
+                <div id="list">
+
+                    <li><span>Housing Deputes<i> 5763</i></span></li>
+
+                    <li><span>land issues <i> 3642</i></span></li>
+
+                    <li><span> labor proceeding<i> 1150</i></span></li>
+
+                </div>
+                <button>see more</button>
+            </div>
+
+            <div id="box">
+                <h3>Asvicates office<i> 5 207</i></h3>
+                <div id="list">
+
+                    <li><span> Murder<i>1225</i></span></li>
+
+                    <li><span> Regue attack <i>863</i></span></li>
+
+                    <li><span>Terrorism <i> </i>141</span></li>
+
+                </div>
+                <button>see more</button>
+            </div>
+
+            <div id="box">
+                <h3>Notaries Of location <i>6 039 </i></h3>
+                <div id="list">
+
+                    <li><span> issuance of power attorney<i>1533</i></span></li>
+
+                    <li><span>Certificate Of Contracts  <i>303</i></span></li>
+
+                    <li><span> <i> inheritance</i></span>280</li>
+
+                </div>
+                <button>see more</button>
+            </div>
+
+        </div><br>
+
+        <br>
+        <h3>Search Lawyer location</h3>
+        <a href="https://www.openstreetmap.org/">
+            <!--search here-->
+            <div style="width: 90%;" id="search"><input placeholder="Search for lawyer near you"><button>Find</button></div>
+            <br>
+            <!--Search end-->
+            <div id="locationMap">
+
+
+            </div>
+
+        </a>
+
+
+        <!--end of page started-->
+        <footer id="foot">
+
+            <div id="box">
+                <h5>Proyurist.ur</h5>
+                <ul>
+                    <a href=" ">
+                        <li>About Company</li>
+                    </a>
+                    <a href=" ">
+                        <li>Additional office and other entities </li>
+                    </a>
+                    <a href=" ">
+                        <li>Terms and conditions</li>
+                    </a>
+                    <a href=" ">
+                        <li>Out performance</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div id="box">
+                <h5>ProLawyer</h5>
+                <ul>
+                    <a href=" ">
+                        <li>What that say About Us</li>
+                    </a>
+                    <a href=" ">
+                        <li>Battle for review</li>
+                    </a>
+                    <a href=" ">
+                        <li>Vacancy</li>
+                    </a>
+                    <a href=" ">
+                        <li>Contact Us</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div id="box">
+                <h5>Reference</h5>
+                <ul>
+                    <a href=" ">
+                        <li>Information for client </li>
+                    </a>
+                    <a href=" ">
+                        <li>Information for Lawyers</li>
+                    </a>
+                    <a href=" ">
+                        <li>Informatoin for Advocates</li>
+                    </a>
+                    <a href=" ">
+                        <li>Information for Companies</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div id="box">
+                <h5>Additional Informations</h5>
+                <ul>
+                    <a href=" ">
+                        <li>Terms of use</li>
+                    </a>
+                    <a href=" ">
+                        <li>publication of materials</li>
+                    </a>
+                    <a href=" ">
+                        <li>Data processing</li>
+                    </a>
+                </ul>
+            </div>
+
+            <div id="box">
+                <h5> Site Map</h5>
+                <ul>
+                    <a href=" ">
+                        <li> Cities</li>
+                    </a>
+                    <a href=" ">
+                        <li>Regions </li>
+                    </a>
+                    <a href=" ">
+                        <li>Advocates</li>
+                    </a>
+                    <a href=" ">
+                        <li>Lawyers</li>
+                    </a>
+                    <a href=" ">
+                        <li> Services</li>
+                    </a>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+    <!--END-->
+    <script type="text/javascript">
+        let ctr_scroll;
+        $("#top #menu_content").css({
+            width: screen.width / 2 + 50 + "PX",
+            height: screen.height + "PX"
+        }).hide();
+        $("#top #open").click(function() {
+            $("#menu_content").show()
+            $("html,body").animate({
+                scrollLeft: 500
+            }, "slow").children("*").css("background", "rgba(0,0,0,0.4)");
+            $(this).css("font-size", "0");
+            $("#close").attr("class", "fa fa-arrow-right");
+        });
+        $("#close").click(function() {
+            $("#menu_content").hide("slow")
+            $("html,body").animate({
+                scrollLeft: -500
+            }, "slow").children("*").css("background", "");
+            $("#top button").css("font-size", "");
+            $(this).attr("class", "fa fa-arrow-left");
+        });
+
+        $("#SearchResult").css("width", screen.width + "px").hide();
+        $("#search input").on("keyup", function() {
+            let search = $("#search input").val();
+            if (search.length > 0) {
+                $("#SearchResult").show("slow");
+                //search function should be done here inside <li></li> elememt
+                MatchResult = $("#append_search_result");
+            } else {
+                $("#SearchResult").hide("slow");
+            }
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/profile.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../jquery.js"></script>
+    <script type="text/javascript">
+        //$("#p1,#p2").fadeOut("slow");
+    </script>
+    <style type="text/css">
+        @media screen and (min-width:750px) {
+            ChooseOnce {
+                width: 50%;
+            }
+            nav footer {
+                display: none;
+            }
+        }
+    </style>
+    <title>My profile</title>
+</head>
+
+<body>
+    <div id="body">
+        <div id="top">
+            <nav><button id="open" class="fa fa-reorder"></button>
+                <!--menu -->
+                <div id="menu_content">
+                    <span style="padding: 5px 10px;" id="close" class="fa fa-arrow-right"></span>
+                    <ul>
+                        <li> <a href=" "><i class="fa fa-home" ></i>Home</a></li>
+                        <li><a href=" "><i class="fa fa-book"></i>Change Services</a></li>
+                        <li><a href=" "><i class="fa fa-universal-access"></i>Laws</a> </li>
+                        <li><a href=" "><i class="fa fa-asl-interpreting "></i>Advocates</a></li>
+                        <li><a href=" "><i class=" fa fa-flag-checkered"></i>Notaries</a></li>
+                        <hr>
+                        <li><a href=" "><i class="fa fa-envelope-square"></i> </a>Contact</a>
+                        </li>
+                        <li><a href=" "><i class=" fa fa-info-circle"> </i>About Us</a></li>
+                        <li><a href=" "><i class="fa fa-warning"></i> Terms and conditions</a></li>
+                    </ul>
+                </div>
+                <!--menu end-->
+            </nav>
+            <!--nav end-->
+            <footer></footer>
+        </div><br><br>
+        <h3> Austine Company </h3>
+        <!-- end -->
+        <table id="details">
+            <!-- print infos here-->
+            <tr>
+                <td>
+                    <span class="fa fa-user"><i style="left:0%; margin-top:7%;" >live in Lagos Nigeria</i></span>
+                </td>
+
+
+                <td>
+                    <span class="fa fa-phone"><i  style="left:25%; margin-top:7%;" >080630202017</i></span>
+                </td>
+
+
+                <td>
+                    <span class="fa fa-envelope-square"><i  style="left:41%; margin-top:7%;" >austinesamuel914@gmail.com</i></span>
+                </td>
+
+
+                <td>
+                    <span class="fa fa-dashboard"><i style="left:80%; margin-top:7%; " >211 views</i></span>
+                </td>
+
+            </tr>
+        </table>
+        <br><br><br>
+
+        <!--search here-->
+        <div id="search"><input placeholder="Search Something"><button>Find</button></div>
+        <div id="SearchResult" style="position: absolute; background:;">
+            <ul style="background:white; color:dimgrey;" id="append_search_result">
+                <h4>suggestion</h4>
+                <a href="">
+                    <li>Lawyers at Lagos</li>
+                </a>
+            </ul>
+        </div>
+        <!--Search end-->
+
+        <br>
+        <h3 style=" color:#893EDA; word-spacing:10px; text-decoration:underline;">Your Activities</h3>
+        <div id="ChoosedOnce">
+
+            <div id="box">
+                <h3>Service</h3>
+                <div id="list">
+
+                    <li><span>Consultation <i>30</i></span></li>
+
+                    <li><span>Drafting of legal documents <i>330</i></span></li>
+
+                    <li><span>representation of interest in court<i>55</i></span></li>
+
+                </div>
+                <button>Choose More</button>
+            </div>
+
+
+            <div id="box">
+                <h3>Notaries</h3>
+                <div id="list">
+
+                    <li><span> <i> 0</i></span></li>
+
+                    <li><span> <i> 0</i></span></li>
+
+                    <li><span> <i> 0</i></span></li>
+
+                </div>
+                <button>Choose More</button>
+            </div>
+
+
+            <div id="box">
+                <h3>Advocates</h3>
+                <div id="list">
+
+                    <li><span> <i> 0</i></span></li>
+
+                    <li><span> <i>0</i></span></li>
+
+                    <li><span> <i>0</i></span></li>
+
+                </div>
+                <button>Choose More</button>
+            </div>
+
+
+            <div id="box">
+                <h3>Lawyers</h3>
+                <div id="list">
+
+                    <li><span> <i> 0</i></span></li>
+
+                    <li><span> <i> 0</i></span></li>
+
+                    <li><span> <i> 0</i></span></li>
+
+                </div>
+                <button>Choose More</button>
+            </div>
+
+            <div id="box">
+                <h3>Lawyers</h3>
+                <div id="list">
+
+                    <li><span> <i> 0</i></span></li>
+
+                    <li><span> <i> 0</i></span></li>
+
+                    <li><span> <i>0 </i></span></li>
+
+                </div>
+                <button>Choose More</button>
+            </div>
+
+            <div id="box">
+                <h3>Others</h3>
+                <div id="list">
+
+                    <li><span> <i> 0</i></span></li>
+
+                    <li><span> <i>0 </i></span></li>
+
+                    <li><span> <i> 0</i></span></li>
+
+                </div>
+                <button>Choose More</button>
+            </div>
+
+        </div>
+        <br>
+        <h3 style="text-decoration:underline; text-align:left;padding: 0px 10px;">Top #1</h3>
+        <div id="topers_list">
+
+            <div id="box">
+                <h5>Lawyers</h5>
+                <span>20728</span>
+                <button>View All</button>
+            </div>
+
+            <div id="box">
+                <h5>Advocates</h5>
+                <span>108279</span>
+                <button>View All</button>
+            </div>
+
+            <div id="box">
+                <h5>Notaries</h5>
+                <span>304792</span>
+                <button>View All</button>
+            </div>
+
+
+        </div><br><br>
+
+    </div>
+    <!--end of page started-->
+    <footer id="foot">
+
+        <div id="box">
+            <h5>Proyurist.ur</h5>
+            <ul>
+                <a href=" ">
+                    <li>About Company</li>
+                </a>
+                <a href=" ">
+                    <li>Additional office and other entities </li>
+                </a>
+                <a href=" ">
+                    <li>Terms and conditions</li>
+                </a>
+                <a href=" ">
+                    <li>Out performance</li>
+                </a>
+            </ul>
+        </div>
+
+        <div id="box">
+            <h5>ProLawyer</h5>
+            <ul>
+                <a href=" ">
+                    <li>What that say About Us</li>
+                </a>
+                <a href=" ">
+                    <li>Battle for review</li>
+                </a>
+                <a href=" ">
+                    <li>Vacancy</li>
+                </a>
+                <a href=" ">
+                    <li>Contact Us</li>
+                </a>
+            </ul>
+        </div>
+
+        <div id="box">
+            <h5>Reference</h5>
+            <ul>
+                <a href=" ">
+                    <li>Information for client </li>
+                </a>
+                <a href=" ">
+                    <li>Information for Lawyers</li>
+                </a>
+                <a href=" ">
+                    <li>Informatoin for Advocates</li>
+                </a>
+                <a href=" ">
+                    <li>Information for Companies</li>
+                </a>
+            </ul>
+        </div>
+
+        <div id="box">
+            <h5>Additional Informations</h5>
+            <ul>
+                <a href=" ">
+                    <li>Terms of use</li>
+                </a>
+                <a href=" ">
+                    <li>publication of materials</li>
+                </a>
+                <a href=" ">
+                    <li>Data processing</li>
+                </a>
+            </ul>
+        </div>
+
+        <div id="box">
+            <h5> Site Map</h5>
+            <ul>
+                <a href=" ">
+                    <li> Cities</li>
+                </a>
+                <a href=" ">
+                    <li>Regions </li>
+                </a>
+                <a href=" ">
+                    <li>Advocates</li>
+                </a>
+                <a href=" ">
+                    <li>Lawyers</li>
+                </a>
+                <a href=" ">
+                    <li> Services</li>
+                </a>
+            </ul>
+        </div>
+
+    </footer>
+    </div>
+    <!--END-->
+    <script type="text/javascript">
+        let ctr_scroll;
+        $("#top #menu_content").css({
+            width: screen.width / 2 + 50 + "PX",
+            height: screen.height + "PX"
+        }).hide();
+        $("#top button").click(function() {
+            $("#menu_content").show()
+            $("html,body").animate({
+                scrollLeft: 500
+            }, "slow").children("*").css("background", "rgba(0,0,0,0.4)");
+            $(this).css("font-size", "0");
+            ctr_scroll = setInterval(DontScroll, 100);
+            $("#close").attr("class", "fa fa-arrow-right");
+        });
+
+        function DontScroll() {
+            let x = $(window).scrollLeft();
+            return scrollTo(x, 0);
+        }
+        $("#close").click(function() {
+            clearInterval(ctr_scroll)
+            $("#menu_content").hide("slow")
+            $("html,body").animate({
+                scrollLeft: -500
+            }, "slow").children("*").css("background", "");
+            $("#top button").css("font-size", "");
+            $(this).attr("class", "fa fa-arrow-left");
+        });
+        $("#SearchResult").css("width", screen.width + "px").hide();
+        $("#search input").on("keyup", function() {
+            let search = $("#search input").val();
+            if (search.length > 0) {
+                $("#SearchResult").show("slow");
+                //search function should be done here
+                MatchResult = $("#append_search_result");
+
+            } else {
+                $("#SearchResult").hide("slow");
+            }
+        })
+    </script>
+</body>
+
+</html>

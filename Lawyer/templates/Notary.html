@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Choose service</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../static/styles.css" />
+    <link rel="stylesheet" href="../static/libs/font-awesome.min.css">
+    <script src="../static/libs/jquery.js"></script>
+
+</head>
+
+<body>
+    <div id="body">
+        <nav>
+            <span>proyurist.ur</span>
+        </nav>
+        <h3><span>Choose services</span></h3>
+        <div id="form">
+            <form method="post" action=" " onsubmit>
+
+                <ul>
+
+
+                    <li id="Pick"><input id="check1" name="N1" value="Certification of transactions (agreements)" type="checkbox" class="check" hidden>
+                        <label for="check1" class="fa fa-square-o"><span>Certification of transactions (agreements)</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check2" name="N2" value="Drawing up wills and issuing certificates of inheritance" type="checkbox" class="check" hidden>
+                        <label for="check2" class="fa fa-square-o"><span>Drawing up wills and issuing certificates of inheritance</span></label>
+                    </li>
+
+
+                    <li id="Pick"><input id="check3" name="N3" value="Certification of powers of attorney" type="checkbox" class="check" hidden>
+                        <label for="check3" class="fa fa-square-o"><span>Certification of powers of attorney</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check4" name="N4" value="Issuance of certificates" type="checkbox" class="check" hidden>
+                        <label for="check4" class="fa fa-square-o"><span>Issuance of certificates</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check5" name="N5" value="Registration of consents" type="checkbox" class="check" hidden>
+                        <label for="check5" class="fa fa-square-o"><span>Registration of consents</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check6" name="N6" value="Certification of the authenticity of the signature, the accuracy of the translation, copies of documents and extracts from them" type="checkbox" class="check" hidden>
+                        <label for="check6" class="fa fa-square-o"><span>Certification of the authenticity of the signature, the accuracy of the translation, copies of documents and extracts from them</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check7" name="N7" value="Acceptance of cash and securities for deposit" type="checkbox" class="check" hidden>
+                        <label for="check7" class="fa fa-square-o"><span>Acceptance of cash and securities for deposit</span></label>
+                    </li>
+                    <li id="Pick"><input id="check8" name="law" value="Making performance captions and providing evidence" type="checkbox" class="check" hidden>
+                        <label for="check8" class="fa fa-square-o"><span>Making performance captions and providing evidence</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check9" name="law" value="Acceptance of documents for storage, presentation of checks for payment and certification of their non-payment" type="checkbox" class="check" hidden>
+                        <label for="check9" class="fa fa-square-o"><span>Acceptance of documents for storage, presentation of checks for payment and certification of their non-payment</span></label>
+                    </li>
+
+                    <li id="Pick"><input id="check10" name="law" value=" Making sea protests and protests of bills" type="checkbox" class="check" hidden>
+                        <label for="check10" class="fa fa-square-o"><span> Making sea protests and protests of bills</span></label>
+                    </li>
+                    <!--end list-->
+
+                </ul>
+                <footer><input onclick="send()" type="submit"></footer>
+            </form>
+        </div>
+    </div>
+    <p></p>
+    <script type="text/javascript">
+        let choosed = 5;
+        $("li label").click(function() {
+            let check = $(this).attr("class")
+            if (check == "fa fa-square-o") {
+                choosed--;
+                $(this).attr("class", "fa fa-check-square").parent("li").css("background", "#E9DBEC");
+            } else {
+                if (choosed > -1) {
+                    choosed++;
+                    $(this).attr("class", "fa fa-square-o").parent("li").css("background", "white");
+                } else {
+                    alert("you can only choose five or less services");
+                }
+
+            }
+        });
+
+        function send() {
+            $.ajax({
+                url: window.location,
+                type: "post"
+            })
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ming</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            display: block;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            color: black;
+            background-color: #dfdfdf;
+        }
+        /* Top green head */
+        
+        header {
+            background: rgb(19, 109, 109);
+            height: 40px;
+            color: white
+        }
+        
+        header span {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: xx-large;
+            margin: 30px;
+        }
+        
+        input[type='search'] {
+            border: none;
+            border-radius: 20px;
+            padding: 6px;
+            margin: none;
+        }
+        /* 
+        Bottom Area */
+        
+        #social {
+            margin-left: 10px;
+            display: flex;
+        }
+        
+        #left {
+            font-size: small;
+        }
+        
+        #left div,
+        #mid div {
+            display: min-content;
+            width: auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        
+        #left h3 {
+            margin: 0px;
+            text-align: center;
+        }
+        
+        #left h3 {
+            color: rgb(19, 109, 109);
+        }
+        
+        #mid {
+            overflow-y: scroll;
+        }
+        
+        #mid div {
+            padding: 0px;
+        }
+        /*
+        #poster span {
+            border-bottom: 2px solid black;
+            margin: 5px;
+            padding: 10px;
+        }*/
+        
+        #right {
+            width: 30%
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <span>MING</span>
+        <input type="search" name="search" id="search" placeholder="Search ming">
+        <section id="icons"></section>
+        <div id="profile"></div>
+    </header>
+    <div id="social">
+        <div id="left">
+            <div id="menu">
+                <h3>MENU LIST</h3>
+                <p> <img src="../static/home.svg" alt="" />Home</p>
+                <p> <img src="../static/friends.svg" alt="" />Friends List</p>
+                <p> <img src="../static/notifs.svg" alt="" />Notifications</p>
+                <p> <img src="../static/chat.svg" alt="" />Chat</p>
+                <p> <img src="../static/group.svg" alt="" />Group</p>
+                <p> <img src="../static/dollar.svg" alt="" />Earn by Ads</p>
+                <p> <img src="../static/cash.svg" alt="" />User Balance</p>
+            </div>
+
+            <div id="login">
+                <h3>LOGIN</h3>
+                <p><img src="../static/user.svg" alt="" />Change User</p>
+                <p><img src="../static/exit.svg" alt="" />Logout</p>
+            </div>
+
+            <div id="settings">
+                <h3>Settings/Appearance</h3>
+                <p> <img src="../static/cogs.svg" alt="" />Settings</p>
+                <p> <img src="../static/moon.svg" alt="" />Darkmode</p>
+            </div>
+        </div>
+
+        <div id="mid">
+            <div id="poster" style="padding: 15px">
+                <span>
+                    <img src="../static/profile.png" alt="" >
+                    <input type="search" placeholder="What's on your mind ?" />
+                </span>
+                <hr size="1" noshade>
+                <img src="../static/camera.svg" alt="">
+                <img src="../static/video.svg" alt="">
+            </div>
+
+            <!-- Here will come the contents by js -->
+
+            <div class="posts">
+                <div class="info">
+                    <img src="../static/profile.png" alt="">
+                    <div>
+                        <h3>Harrison</h3>
+                        <span class="time"></span>
+                    </div>
+                </div>
+                <div class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse maiores, repudiandae officia hic fuga suscipit sunt nobis vero architecto laboriosam nam culpa rerum modi, vel, ea quaerat nihil. Veritatis, quis?</div>
+                <div class="media"><img src="../static/campic.png" alt=""></div>
+                <div class="interact">
+                    <div class="like">
+                        <img src="../static/like.svg" alt="">
+                        <span class="count"></span>
+                    </div>
+                    <div class="comment">
+                        <img src="../static/like.svg" alt="">
+                        <span class="count"></span>
+                    </div>
+                    <div class="share">
+                        <img src="../static/like.svg" alt="">
+                        <span class="count"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="right"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Create Account</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+
+</head>
+
+<body>
+    <div id="body">
+
+        <!--loader here-->
+        <div id="loaderBox">
+            <div class="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <link rel="stylesheet" href="../static/style2.css" />
+        <link rel="stylesheet" href="../static/libs/font-awesome.css">
+        <script src="../static/libs/jquery.js"></script>
+
+        <script>
+            $("#p1,#p2").fadeOut("slow");
+        </script>
+        <!--loader end-->
+
+
+        <div id="top_btn">
+            <button id="login">login</button>
+            <button id="register">Register</button>
+        </div>
+
+        <div id="do">Lets create your account!</div><br>
+
+
+        <!--top selection-->
+        <table id="choose_Now">
+            <tr>
+                <td style="background:linear-gradient(11deg,#e2b4f4,#c363f1) ">
+                    <button style="color:white;" class="choose">Normal User</button>
+                </td>
+                <td> <button class="choose">Company</button> </td>
+                <td> <button class="choose">Advocate</button> </td>
+            </tr>
+            <tr>
+                <td> <button class="choose">Lawyer</button> </td>
+                <td> <button class="choose">Notary</button> </td>
+            </tr>
+        </table>
+        <br>
+
+
+        <!--form for registeration -->
+        <div id="form">
+            <div id="box"><br>
+                <img id="logo" src="https://i.imgur.com/UZdAs4p.jpg">
+
+                <form method="post" action="Normal_user.html" onsubmit="return validate()">
+                    <div class="NotLogin">
+                        <button class="fa fa-book"></button>
+                        <input type="text" placeholder="Company Name" name="text" id="name">
+                    </div>
+                    <i class="checkName"></i>
+
+                    <div>
+                        <button class="fa fa-address-card-o"></button>
+                        <input type="email" placeholder="Email Address" name="email" id="email">
+                    </div>
+                    <i class="checkEmail"></i>
+                    <footer>Contact Info</footer>
+
+                    <div class="NotLogin">
+                        <button class="fa fa-home"></button>
+                        <input type="text" placeholder="City" name="city" id="city">
+                    </div>
+
+                    <i class="checkCity"></i>
+
+                    <div class="NotLogin">
+                        <button class="fa fa-map-marker"></button>
+                        <input type="text" placeholder="address" name="address" name="address" id="address">
+                    </div>
+                    <i class="checkAddress"></i>
+
+                    <div class="NotLogin">
+                        <button class="fa fa-street-view"></button>
+                        <input type="number" placeholder="Enter Post Code" name="postCode" id="postCode">
+                    </div>
+                    <i class="checkPostCode"></i>
+
+                    <div class="NotLogin">
+                        <button class="fa fa-phone"></button>
+                        <input type="number" placeholder="Telephone" name="Tel" id="Tel">
+                    </div>
+                    <i class="checkTelephone"></i>
+                    <br>
+
+                    <!--try password-->
+                    <footer class="NotLogin" id="try">Try password ?</footer>
+
+                    <br>
+                    <div id="p1">
+                        <button class="fa fa-user-o"></button>
+                        <input style="width: 70%;" type="password" placeholder="Enter password" name="passwordNew" name="address" id="password">
+                        <button id="showP1" class="fa fa-eye-slash"></button></div>
+                    <i class="checkP1"></i>
+
+                    <div class="NotLogin" id="p2">
+                        <button class="fa fa-user"></button>
+                        <input style="width: 70%;" type="password" placeholder="Retype password" name="password2" id="password2">
+                        <button id="showP2" class="fa fa-eye-slash"></button></div>
+                    <i class="checkP2"></i>
+
+                    <!--password end--><br>
+                    <input name="submit" id="submit" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src='../static/input.js'></script>
+</body>
+
+</html>
+
+</html>

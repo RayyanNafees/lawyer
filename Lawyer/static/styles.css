@@ -1,0 +1,90 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+button,
+input {
+    outline: none;
+    background: none;
+    border: none;
+}
+
+nav {
+    height: 50px;
+    display: flex;
+    padding: 0px 10px;
+    align-items: center;
+    box-shadow: 1px 1px 2px 0px lightgrey;
+}
+
+nav span {
+    color: #A056C9;
+}
+
+h3 {
+    color: #957C9E;
+    text-align: center;
+}
+
+ul {
+    margin-left: -10%;
+    list-style-type: none;
+}
+
+#checkNow {
+    font-size: 25px;
+    color: #61268A;
+}
+
+#Pick {
+    padding: 10px;
+    margin-top: 1%;
+    border-bottom: 1px solid #ECECEC;
+}
+
+#Pick label {
+    padding: 8px;
+    color: dimgrey;
+    font-size: larger;
+}
+
+label span {
+    font-size: medium;
+    padding: 0px 6px;
+}
+
+form footer {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid lightgrey;
+    background: white;
+    margin-left: -10px;
+}
+
+#form {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 5px;
+    box-shadow: 1px 1px 5px 0px lightgrey;
+}
+
+form footer input {
+    margin-top: 2%;
+    font-size: 20px;
+    padding: 3px 3px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #f1fff6, #fbeeff);
+    color: dimgrey;
+    border-top: 1px solid #e2b4f4;
+    box-shadow: 1px 1px 10px -10px #61268A;
+}
+
+form footer input:active {
+    background: none;
+    border: 1px solid #e2b4f4;
+}

@@ -1,0 +1,282 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 1000px;
+}
+
+button {
+    text-align: center;
+}
+
+button,
+input {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h4 {
+    text-align: center;
+}
+
+#top {
+    width: 100%;
+    height: 200px;
+    background-size: 100% 100%;
+    background-image: url("https://i.imgur.com/kBefOp7.jpg");
+}
+
+h3 {
+    text-align: center;
+}
+
+#top footer {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    border: 5px solid #E8ECF1;
+    position: absolute;
+    top: 30%;
+    left: 36%;
+    background: white;
+}
+
+#top nav {
+    width: 100%;
+    height: 20%;
+    background: rgba(900, 900, 900, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#top #open {
+    margin-left: 90%;
+    color: white;
+}
+
+#top #menu_content span:hover {
+    color: #461A2F;
+}
+
+#menu_content li:hover {
+    background: #ECEDED;
+    color: red;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: -10%;
+}
+
+#menu_content li {
+    padding: 10px 20px;
+    width: auto;
+}
+
+#menu_content li i {
+    padding: 0px 8px;
+}
+
+#top #menu_content {
+    background: white;
+    position: absolute;
+    box-shadow: -10px 10px 10px -5px grey;
+    color: dimgrey;
+}
+
+#details {
+    width: 100%;
+    text-align: center;
+}
+
+#details td {
+    text-align: center;
+    padding: 1px 6px;
+    font-size: 150%;
+    color: #893EDA;
+}
+
+#details td span>i {
+    color: lightgrey;
+    padding: 8px 8px;
+    border-radius: 10px;
+    position: absolute;
+    background: rgba(1, 1, 1, 0.9);
+    font-size: 9%;
+    opacity: 0;
+}
+
+#details td span:hover>i {
+    transition: 0.6 ease;
+    transition-duration: 800ms;
+    opacity: 0.9;
+    color: #FFFFFF;
+}
+
+#ChoosedOnce {
+    width: 80%;
+    height: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: space-between;
+    overflow: ;
+}
+
+#ChoosedOnce #box {
+    color: dimgrey;
+    width: 50%;
+    height: 200px;
+    margin-top: 2%;
+    font-size: medium;
+    box-shadow: 1px 0px 5px -1px lightgrey;
+}
+
+#ChoosedOnce h3 {
+    text-align: left;
+    padding: 0px 6px;
+    font-size: 17px;
+}
+
+#ChoosedOnce button {
+    background: #893EDA;
+    width: 98%;
+    height: 15%;
+    margin-top: 0%;
+    color: White;
+}
+
+#ChoosedOnce button:active {
+    background: none;
+    border: 1px solid #FDF4FF;
+}
+
+#ChoosedOnce button:hover {
+    border: 1px solid #893EDA;
+    background: #EEC4ED;
+    transition: 0.6 ease;
+    transition-duration: 800ms;
+}
+
+#ChoosedOnce #list {
+    box-shadow: 0px 0px 10px -10px #E6E6E6;
+    width: auto;
+    height: 50%;
+    font-size: small;
+    overflow: hidden;
+}
+
+#ChoosedOnce #list li {
+    color: #867F8D;
+    padding: 8px 0px;
+    list-style-type: none;
+}
+
+#ChoosedOnce #list li i {
+    float: right;
+    padding: 0px 10px;
+    font-size: smaller;
+    color: #9D7EA6;
+}
+
+#search {
+    width: 80%;
+    height: 30px;
+    padding: 0;
+    background: white;
+    margin: 0 auto;
+    border: 1px solid #F3F3F3;
+}
+
+#search button {
+    background: #893EDA;
+    width: 20%;
+    height: 100%;
+    Color: white;
+    margin-left: 8px;
+}
+
+#search input {
+    width: 70%;
+    padding: 0px 10px;
+}
+
+#topers_list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: rows;
+}
+
+#topers_list #box {
+    margin-left: 2%;
+    width: 33.3%;
+    background: none;
+    box-shadow: 1px 0px 2px 0px lightgrey;
+}
+
+#topers_list button {
+    background: #FDF4FF;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+#topers_list h5 {
+    padding: 0px 5px;
+}
+
+#topers_list span {
+    color: grey;
+}
+
+#topers_list button:hover {
+    background: #893EDA;
+    color: white;
+}
+
+#foot {
+    width: 100%;
+    height: auto;
+    background: #180021;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-between;
+}
+
+#foot #box {
+    width: 150px;
+    color: lightgrey;
+}
+
+#foot #box li {
+    padding: 3px 10px;
+}
+
+#foot #box li:active {
+    color: red;
+}
+
+#foot #box li:hover {
+    color: black;
+    background: #806F89;
+}
+
+#SearchResult {
+    background: white;
+}
+
+//
+// #59B852 active buttons
+// #DAFFD9 active click
+// #893EDA free color
+// light wight #F3F3F3 #E6E6E6
+// dim white #C3CCD0
+//color light #FDF4FF

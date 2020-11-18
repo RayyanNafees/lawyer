@@ -1,0 +1,232 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+button,
+input {
+    outline: none;
+    background: none;
+    border: none;
+}
+
+#top_button {
+    margin-left: 8%;
+}
+
+#top_btn button:active {
+    color: #893EDA;
+}
+
+#top_btn button {
+    color: dimgrey;
+    background: ;
+    height: 40px;
+    border: 1px solid lightgrey;
+    margin-left: 1%;
+    padding: 2px 10px;
+}
+
+#do {
+    width: 70%;
+    height: 40px;
+    text-align: center;
+    background-image: url("https://i.imgur.com/Ue9PgkG.png");
+    background-size: 100% 100%;
+    color: #A64B0E;
+    text-shadow: 1px 1px white;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+#choose_Now {
+    width: 100%;
+    height: auto;
+}
+
+#choose_Now td {
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #F3F3F3;
+    width: 33%;
+    background: #F9F2FF;
+}
+
+#choose_Now td button {
+    color: dimgrey;
+}
+
+#choose_Now td:active {
+    background: #59B852;
+}
+
+#form {
+    background: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#form #box {
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+    padding: 20px 4px;
+    box-shadow: 1px 1px 10px 0px dimgrey;
+    animation-name: ;
+    animation-duration: 1s;
+}
+
+#form #box .fa {
+    color: dimgrey;
+}
+
+#form #box footer {
+    width: 100%;
+    text-align: left;
+    color: dimgrey;
+    padding: 0px 10px;
+    display: none;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0px) translateY(0em) translateZ(0px);
+    }
+    100% {
+        transform: translateX(400px) translateY(0em) translateZ(30px);
+    }
+}
+
+#form #box div {
+    padding: 3px 3px;
+    background: #F3F3F3;
+    height: 35px;
+    margin-top: 1%;
+}
+
+#form #box div input {
+    background: white;
+    color: dimgrey;
+    font-family: Times;
+    height: 70%;
+    width: 80%;
+    padding: 5px 5px;
+}
+
+#try {
+    float: left;
+    color: #893EDA;
+    background: none;
+    padding: 0px 10px;
+}
+
+#p1,
+#p2 {
+    display: none;
+}
+
+#top_btn #login {
+    border: 1px solid #F3F3F3;
+    background: none;
+    color: #893EDA;
+}
+
+#logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    margin: 0 auto;
+}
+
+input[type="submit"] {
+    font-size: medium;
+    border-radius: 4px;
+    padding: 5px 25px;
+    background: linear-gradient(13deg, #c363f1, #7fe986);
+    color: white;
+}
+
+input[type="submit"]:active {
+    background: None;
+    border: 1px solid #c363f1;
+    color: dimgrey;
+}
+
+.NotLogin,
+#choose_Now,
+#do {
+    display: none;
+}
+
+#p1 {
+    display: block;
+}
+
+form i {
+    font-size: 10px;
+}
+
+
+/*loader*/
+
+#loaderBox {
+    width: 250px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    margin-top: -125px;
+    margin-left: -125px;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.lds-ring {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+}
+
+.lds-ring div {
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border: 5px solid black;
+    border-radius: 50%;
+    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+    border-color: black transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+    animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+    animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+    animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// #59B852 active buttons
+// #DAFFD9 active click
+// #893EDA free color
+// light wight #F3F3F3 #E6E6E6
+// dim white #C3CCD0
